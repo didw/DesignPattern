@@ -6,7 +6,7 @@ public class Main {
         String[] data = {
                 "Dumpty", "Bowman", "Carroll", "Elfland", "Alice",
         };
-        SortAndPrint sap = new SortAndPrint(data, new InsertionSorter());
+        SortAndPrint sap = new SortAndPrint(data, new QuickSorter());
         sap.execute();
     }
 }
