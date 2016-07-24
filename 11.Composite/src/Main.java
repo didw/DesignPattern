@@ -28,8 +28,13 @@ public class Main {
             Kim.add(new File("Composite.java", 200));
             Lee.add(new File("memo.tex", 300));
             Park.add(new File("game.doc", 400));
-            Park.add(new File("junk.mail", 500));
+            File file = new File("junk.mail", 500);
+            Park.add(file);
             rootdir.printList();
+            
+            System.out.println("");
+            System.out.println("file = " + file.getFullName());
+            
             
         } catch (FileTreatmentException e) {
             e.printStackTrace();
