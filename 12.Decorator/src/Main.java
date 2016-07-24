@@ -23,5 +23,16 @@ public class Main {
                         ),
                     '/');
         b4.show();
+        
+        MultiStringDisplay md = new MultiStringDisplay();
+        md.add("Good Morning");
+        md.add("Hello");
+        md.add("Good night!");
+        md.show();
+        
+        Display d5 = new SideBorder(md, '#');
+        d5.show();
+        Display d6 = new FullBorder(d5);
+        d6.show();
     }
 }
